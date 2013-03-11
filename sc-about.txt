@@ -1,14 +1,18 @@
-*מנהל הפרוייקט נכנס ל-github, ויוצר issue חדש תחת הפרוייקט שלו.
-*מנהל הפרוייקט רושם את הפרוייקט שלו ל-sc (מעכשיו social coding = sc), כך שה-SC ישאב ויתעדכן מול github על issues חדשים בפרוייקט.
-*כל issue חדש שהתווסף ל-SC, יתוייג ע"פ תגיות שכבר קיימות ב-github תחת ה-issue הרלוונטי, בנוסף לתגיות שיתווספו ע"י משתמשים במערכת.
-	*דוגמאות לסוגי תגיות:
-	*טכנולוגיה
-	*רמת קושי
-	*סוג תרגיל (פיתוח, עיצוב, איפיון/ניתוח)
-	*ועוד
-
-*משתמש נכנס למערכת כדי להתחיל ללמוד -> מקבל תרגיל ע"פ נושא שבחר וע"פ רמת קושי (לפי התגיות)
-*כשהמשתמש פותר את התרגיל, התרגיל מתועד ועושה commit מאחורי הקלעים ל-issue ב-github/
-*המשתמש מקבל חזרה פידבק על הקוד וניקוד לאחר שנבדק ע"י צוות הפרוייקט.
-*המשתמש עולה ברמות הקושי ע"פ ניקוד ורצון
-*המשתמש מרוצה והוא תרם לפיתוח מערכת :)
+social coding overview:
+- A project manager log in into github and opens a new issue related to his project.
+- The project manager log into the SC web system and sign his project to the Social Coding Project.
+- The SC will update his exercise list with the issues of all the project signed to it.
+- Every new issue added to SC will be tagged by the project manager and every random user that would like to.
+- Existing tags will be also taken from github
+- Exercise/tags types:
+	- Development
+	- Design
+	- Analysis 
+	- Difficulty
+	- Technology
+	- and more
+- User log in into SC to start learning and practing -> Then receive an exercise accroding to his difficulty level, technology type and exercise type.
+- After the user finish his exercise, there is a commit behind the scenes to the relevant issue in github
+- The user receives feedback & points for his work, after that it is checked by the project team.
+- The user can accumulate points and go up the ranks.
+- We have an happy user that learned how to code well and contribute to a real system.

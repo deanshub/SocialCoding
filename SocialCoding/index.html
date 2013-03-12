@@ -4,9 +4,12 @@
 		<script src="src/jQuery/jquery-1.9.1.min.js"></script>
 		<script type="text/javascript">
 			$.noConflict();
+			jQuery.get('http://en.wikipedia.org/w/api.php?format=json&action=query&titles=Java&prop=categories&clshow=!hidden',function(data,status) {
+		    	alert(data.query);
+			},'html');
 		</script>
 	</head>
-	<body class="HomePageBody">
+	<body class="CenteredBody">
 		<div class="HomePageTitle">
 			<h1>
 				Soical Coding - Programming Together.

@@ -1,3 +1,5 @@
 jQuery(document).ready(function(){
-	getWikiCategories("Java");
+	var res = getWikiCategorySubcategories("Learned%20in%20SocialCoding");
+	var Categories = res.categorymembers;
+	buildListFromCategories(Categories);
 });

@@ -34,6 +34,6 @@ function loadIssues(){
 		{cache:false,dataType:'json',xhrFields: {withCredentials: true}})
 	.success(function(issuse){
 			jQuery('#issue').text(issuse[0].title);
-			jQuery('#issueDesc').attr('src',issuse[0].html_url);
+			jQuery('#issueDesc').text(issuse[0].body);
 		});
 }

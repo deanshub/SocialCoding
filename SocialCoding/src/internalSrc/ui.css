@@ -65,3 +65,19 @@ li a:hover {
   font-size: 40px;
   background: #f6f6f6;
 }
+
+header{
+  font-size: 50px;
+}
+
+#issue{
+  font-size: 20px;
+  font-style: oblique;
+}
+
+.issuBorder{
+  border: 2px solid rgb(49, 40, 40);
+  padding-bottom: 10px;
+  border-radius: 15px;
+  box-shadow: 2px 2px gray;
+}

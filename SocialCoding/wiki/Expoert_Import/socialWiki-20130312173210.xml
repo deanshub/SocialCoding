@@ -1,0 +1,142 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.7/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.7/ http://www.mediawiki.org/xml/export-0.7.xsd" version="0.7" xml:lang="en">
+  <siteinfo>
+    <sitename>socialWiki</sitename>
+    <base>http://localhost/socialWiki/index.php/Main_Page</base>
+    <generator>MediaWiki 1.20.3</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="first-letter">SocialWiki</namespace>
+      <namespace key="5" case="first-letter">SocialWiki talk</namespace>
+      <namespace key="6" case="first-letter">File</namespace>
+      <namespace key="7" case="first-letter">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="first-letter">Template</namespace>
+      <namespace key="11" case="first-letter">Template talk</namespace>
+      <namespace key="12" case="first-letter">Help</namespace>
+      <namespace key="13" case="first-letter">Help talk</namespace>
+      <namespace key="14" case="first-letter">Category</namespace>
+      <namespace key="15" case="first-letter">Category talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Category:SocialCoding</title>
+    <ns>14</ns>
+    <id>12</id>
+    <revision>
+      <id>14</id>
+      <timestamp>2013-03-12T17:31:01Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Created page with &quot;Social Coding&quot;</comment>
+      <sha1>kdzyewl5bvjqt4kfjg73k54g9roigks</sha1>
+      <text xml:space="preserve" bytes="13">Social Coding</text>
+    </revision>
+  </page>
+  <page>
+    <title>Category:Learned in SocialCoding</title>
+    <ns>14</ns>
+    <id>11</id>
+    <revision>
+      <id>13</id>
+      <timestamp>2013-03-12T17:30:50Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Created page with &quot;[[Category:SocialCoding]]&quot;</comment>
+      <sha1>ngzq8z5sav8ehllceua7r1f2370p2v4</sha1>
+      <text xml:space="preserve" bytes="25">[[Category:SocialCoding]]</text>
+    </revision>
+  </page>
+  <page>
+    <title>PHP</title>
+    <ns>0</ns>
+    <id>5</id>
+    <revision>
+      <id>7</id>
+      <timestamp>2013-03-12T17:22:12Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Created page with &quot; &lt;syntaxhighlight lang=&quot;php&quot;&gt; &lt;?php /* A simple php script */   $choice = $_GET['foo']; if ( $choice == 1 ) {   echo 'You like coffee!'; } elseif ( $choice == 2 ) {   echo 'I ...&quot;</comment>
+      <sha1>a1j2zv0lpe20o1fafub8lnfqmavt104</sha1>
+      <text xml:space="preserve" bytes="350">
+&lt;syntaxhighlight lang=&quot;php&quot;&gt;
+&lt;?php
+/* A simple php script */
+ 
+$choice = $_GET['foo'];
+if ( $choice == 1 )
+{
+  echo 'You like coffee!';
+}
+elseif ( $choice == 2 )
+{
+  echo 'I said, &quot;You like coffee!&quot;';
+}
+ 
+echo &quot;&lt;br /&gt;\&quot;Isn't coffee horrible though?\&quot;&quot;;
+ 
+?&gt;
+&lt;/syntaxhighlight&gt;
+
+[[Category:Programming Languages]]
+[[Category:Learned in SocialCoding]]</text>
+    </revision>
+  </page>
+  <page>
+    <title>Java</title>
+    <ns>0</ns>
+    <id>6</id>
+    <revision>
+      <id>8</id>
+      <timestamp>2013-03-12T17:22:39Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Created page with &quot;[[Category:Programming Languages]] [[Category:Learned in SocialCoding]]&quot;</comment>
+      <sha1>qalqf2jlfcm3ox6zf0hkp49m95asi3j</sha1>
+      <text xml:space="preserve" bytes="71">[[Category:Programming Languages]]
+[[Category:Learned in SocialCoding]]</text>
+    </revision>
+  </page>
+  <page>
+    <title>PHP - Special words</title>
+    <ns>0</ns>
+    <id>9</id>
+    <revision>
+      <id>11</id>
+      <timestamp>2013-03-12T17:29:18Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Created page with &quot;[[Category:PHP]] [[Category:Learned in SocialCoding]]&quot;</comment>
+      <sha1>tp95ocn6oq66f3g3dcz5v727vif5jwq</sha1>
+      <text xml:space="preserve" bytes="53">[[Category:PHP]]
+[[Category:Learned in SocialCoding]]</text>
+    </revision>
+  </page>
+  <page>
+    <title>Java - Strings</title>
+    <ns>0</ns>
+    <id>10</id>
+    <revision>
+      <id>12</id>
+      <timestamp>2013-03-12T17:29:38Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Created page with &quot;[[Category:Java]] [[Category:Learned in SocialCoding]]&quot;</comment>
+      <sha1>k2bp46uel6bc0f9ujm0d5j9fzk42kqb</sha1>
+      <text xml:space="preserve" bytes="54">[[Category:Java]]
+[[Category:Learned in SocialCoding]]</text>
+    </revision>
+  </page>
+</mediawiki>

@@ -1,0 +1,1 @@
+go into the wiki to the value Special:Import (after you managed the permissions), and import the xml you want

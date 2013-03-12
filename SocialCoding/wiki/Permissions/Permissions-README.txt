@@ -1,0 +1,1 @@
+copy all the content of Permissions.php into your LocalSettings.php

@@ -33,22 +33,22 @@ div.HomePageSubjects {
   margin-right: auto;
 }
  
-ul {
+.HomePageSubjects ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
  
-li {
+.HomePageSubjects li {
   font: 200 30px/1.5 Helvetica, Verdana, sans-serif;
   border-bottom: 1px solid #ccc;
 }
  
-li:last-child {
+.HomePageSubjects li:last-child {
   border: none;
 }
  
-li a {
+.HomePageSubjects li a {
   text-decoration: none;
   color: #000;
   display: block;
@@ -61,7 +61,7 @@ li a {
   transition: font-size 0.3s ease, background-color 0.3s ease;
 }
  
-li a:hover {
+.HomePageSubjects li a:hover {
   font-size: 40px;
   background: #f6f6f6;
 }
@@ -81,3 +81,46 @@ header{
   border-radius: 15px;
   box-shadow: 2px 2px gray;
 }
+
+
+/***************** navigation box start ******************/
+
+.navbox {
+  position: absolute;
+  top: 20px;
+  left: -100px;
+  z-index: 5;
+}
+
+ul.nav {
+    list-style: none;
+    display: block;
+    width: 200px;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    padding: 60px 0 60px 0;
+    background: url(shad2.png) no-repeat;
+    -webkit-background-size: 50% 100%;
+}
+
+ul.nav li a {
+    -webkit-transition: all 0.3s ease-out;
+    background: #cbcbcb url(border.png) no-repeat;
+    color: #174867;
+    padding: 7px 15px 7px 15px;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    width: 100px;
+    display: block;
+    text-decoration: none;
+    -webkit-box-shadow: 2px 2px 4px #888;
+}
+
+ul.nav li a:hover {
+    background: #ebebeb url(border.png) no-repeat;
+    color: #67a5cd;
+    padding: 7px 15px 7px 30px;
+}
+
+/***************** navigation box end ******************/

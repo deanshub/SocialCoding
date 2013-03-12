@@ -1,5 +1,7 @@
 jQuery(document).ready(function(){
 	loadIssues();
+	addMenuAnimation();
+	slideClose();
 });
 
 function loadIssues(){
@@ -9,4 +11,16 @@ function loadIssues(){
 			jQuery('#issue').text(issuse[0].title);
 			jQuery('#issueDesc').text(issuse[0].body);
 		});
+}
+
+function addMenuAnimation(){
+	jQuery('.navbox').hover(slideOpen,slideClose);
+}
+
+function slideClose(){
+	jQuery('.navbox').animate({"left": "-=120px"}, "slow");
+}
+
+function slideOpen(){
+	jQuery('.navbox').animate({"left": "+=120px"}, "slow");
 }

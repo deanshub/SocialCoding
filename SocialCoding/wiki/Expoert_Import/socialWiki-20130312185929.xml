@@ -1,0 +1,736 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.7/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.7/ http://www.mediawiki.org/xml/export-0.7.xsd" version="0.7" xml:lang="en">
+  <siteinfo>
+    <sitename>socialWiki</sitename>
+    <base>http://localhost/socialWiki/index.php/Main_Page</base>
+    <generator>MediaWiki 1.20.3</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="first-letter">SocialWiki</namespace>
+      <namespace key="5" case="first-letter">SocialWiki talk</namespace>
+      <namespace key="6" case="first-letter">File</namespace>
+      <namespace key="7" case="first-letter">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="first-letter">Template</namespace>
+      <namespace key="11" case="first-letter">Template talk</namespace>
+      <namespace key="12" case="first-letter">Help</namespace>
+      <namespace key="13" case="first-letter">Help talk</namespace>
+      <namespace key="14" case="first-letter">Category</namespace>
+      <namespace key="15" case="first-letter">Category talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Category:Extensions</title>
+    <ns>14</ns>
+    <id>3</id>
+    <revision>
+      <id>5</id>
+      <parentid>4</parentid>
+      <timestamp>2013-03-12T17:17:54Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <sha1>h9dl7xhmaetomdpsokalykek2du88dk</sha1>
+      <text xml:space="preserve" bytes="55">All of our extensions
+
+[[Category:Wiki Administration]]</text>
+    </revision>
+  </page>
+  <page>
+    <title>Category:Java</title>
+    <ns>14</ns>
+    <id>13</id>
+    <revision>
+      <id>24</id>
+      <parentid>18</parentid>
+      <timestamp>2013-03-12T18:48:50Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <sha1>nvsgs2avavmiu8ianenxbcsvwp7tsyb</sha1>
+      <text xml:space="preserve" bytes="71">[[Category:Learned in SocialCoding]]
+[[Category:Programming Languages]]</text>
+    </revision>
+  </page>
+  <page>
+    <title>Category:Learned in SocialCoding</title>
+    <ns>14</ns>
+    <id>11</id>
+    <revision>
+      <id>13</id>
+      <timestamp>2013-03-12T17:30:50Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Created page with &quot;[[Category:SocialCoding]]&quot;</comment>
+      <sha1>ngzq8z5sav8ehllceua7r1f2370p2v4</sha1>
+      <text xml:space="preserve" bytes="25">[[Category:SocialCoding]]</text>
+    </revision>
+  </page>
+  <page>
+    <title>Category:PHP</title>
+    <ns>14</ns>
+    <id>14</id>
+    <revision>
+      <id>25</id>
+      <parentid>19</parentid>
+      <timestamp>2013-03-12T18:48:57Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <sha1>nvsgs2avavmiu8ianenxbcsvwp7tsyb</sha1>
+      <text xml:space="preserve" bytes="71">[[Category:Learned in SocialCoding]]
+[[Category:Programming Languages]]</text>
+    </revision>
+  </page>
+  <page>
+    <title>Category:SocialCoding</title>
+    <ns>14</ns>
+    <id>12</id>
+    <revision>
+      <id>14</id>
+      <timestamp>2013-03-12T17:31:01Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Created page with &quot;Social Coding&quot;</comment>
+      <sha1>kdzyewl5bvjqt4kfjg73k54g9roigks</sha1>
+      <text xml:space="preserve" bytes="13">Social Coding</text>
+    </revision>
+  </page>
+  <page>
+    <title>Category:Wiki Administration</title>
+    <ns>14</ns>
+    <id>4</id>
+    <revision>
+      <id>6</id>
+      <timestamp>2013-03-12T17:18:08Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <comment>Created page with &quot;I'm the admin!!&quot;</comment>
+      <sha1>2dt81rrib7p5s8k5sy4c06gnaa470mr</sha1>
+      <text xml:space="preserve" bytes="15">I'm the admin!!</text>
+    </revision>
+  </page>
+  <page>
+    <title>Extension:SyntaxHighlighter Geshi</title>
+    <ns>0</ns>
+    <id>2</id>
+    <revision>
+      <id>3</id>
+      <parentid>2</parentid>
+      <timestamp>2013-03-12T17:17:07Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <sha1>o7uhhl84fgmzge7xyet17orlqs8lx0h</sha1>
+      <text xml:space="preserve" bytes="19200">The '''Extension:SyntaxHighlight GeSHi''' tag displays formatted [[w:source code|source code]] with the  &lt;code&gt;&amp;lt;syntaxhighlight&amp;gt;&lt;/code&gt; tag.
+
+This extension also  adds coloring according to the code language settings. Like the &lt;code&gt;&amp;lt;pre&amp;gt;&lt;/code&gt; tags and the &lt;code&gt;&amp;lt;poem&amp;gt;&lt;/code&gt; tags, the tags shows the coding exactly as it was typed, preserving white space. 
+
+This extension also can create line numbers.
+
+== Usage ==
+On the wiki page, you can now use &quot;syntaxhighlight&quot; elements:
+
+&lt;pre&gt;&lt;nowiki&gt;
+&lt;syntaxhighlight lang=&quot;php&quot;&gt;
+&lt;?php
+    $v = &quot;string&quot;;    // sample initialization
+?&gt;
+html text
+&lt;?
+    echo $v;         // end of php code
+?&gt;
+&lt;/syntaxhighlight&gt;
+&lt;/nowiki&gt;&lt;/pre&gt;
+
+shows:
+&lt;syntaxhighlight lang=&quot;php&quot;&gt;
+&lt;?php
+    $v = &quot;string&quot;;    // sample initialization
+?&gt;
+html text
+&lt;?
+    echo $v;         // end of php code
+?&gt;
+&lt;/syntaxhighlight&gt;
+
+=== Alternative &amp;lt;source&amp;gt; tag ===
+Before [[rev:50696]], the extension used the tag &lt;code&gt;&amp;lt;source&amp;gt;&lt;/code&gt;.
+This is still supported, but &lt;code&gt;&amp;lt;syntaxhighlight&amp;gt;&lt;/code&gt; avoids conflicts if your source code itself contains &lt;nowiki&gt;&lt;source&gt;&lt;/nowiki&gt; (for example XML).
+
+=== Parameters ===
+; &lt;code&gt;lang=&quot;??&quot;&lt;/code&gt;
+: Defines what programming language the source code is using. This affects how the extension highlights the source code. See the section &quot;[[#Supported_languages|Supported languages]]&quot; in this page for details of supported languages.
+; &lt;code&gt;line=&quot;GESHI_NORMAL_LINE_NUMBERS|GESHI_FANCY_LINE_NUMBERS&quot;&lt;/code&gt;
+: Type of line numbering to use. If you do not provide this parameter, then lines will not be numbered. Corresponds to [http://qbnz.com/highlighter/geshi-doc.html#enabling-line-numbers enable_line_numbers] the flag in GeSHi.
+; &lt;code&gt;line&lt;/code&gt;
+: Equivalent to &lt;code&gt;'''line=&quot;GESHI_FANCY_LINE_NUMBERS&quot;&lt;/code&gt;
+; &lt;code&gt;line start=&quot;??&quot;&lt;/code&gt;
+: Use together with the parameter &quot;'''line'''&quot;. Define the start number of the line. If you type line start=&quot;55&quot;, it will start counting at 55, then 56,57,58... and so on. Corresponds to [http://qbnz.com/highlighter/geshi-doc.html#starting-line-numbers start_line_numbers_at] method on GeSHi
+&lt;!--
+; &lt;code&gt;case&lt;/code&gt;
+: Corresponds to [http://qbnz.com/highlighter/geshi-doc.html#auto-caps-nocaps set_case_keywords] method on GeSHi
+; &lt;code&gt;tab&lt;/code&gt;
+: Corresponds to [http://qbnz.com/highlighter/geshi-doc.html#setting-tab-width set_tab_width] method on GeSHi
+--&gt;
+; &lt;code&gt;highlight=&quot;??&quot;&lt;/code&gt;
+: Specifies which line is highlighted. Note that the parameter '''line start=&quot;??&quot;''' doesn't affect how it counts the lines. 
+; &lt;code&gt;enclose=&quot;??&quot;&lt;/code&gt;
+: Specifies what container is used to enclose the source code. Takes values &quot;pre&quot; (default value), &quot;div&quot;, &quot;none&quot;. Corresponds to [http://qbnz.com/highlighter/geshi-doc.html#the-code-container set_header_type] method on GeSHi. Choosing &quot;div&quot; will cause text to wrap, which is helpful if text is extending off the edge of the screen, causing horizontal scrolling.
+; &lt;code&gt;strict&lt;/code&gt;
+: Type the name of the parameter to enable the strict mode. Corresponds to [http://qbnz.com/highlighter/geshi-doc.html#using-strict-mode enable_strict_mode] method on GeSHi.
+
+The effect and usage of these parameters can be consulted in [http://qbnz.com/highlighter/geshi-doc.html GeSHi's documentation].
+
+Since r22246, you can override the colors using '''MediaWiki:Geshi.css'''.
+
+=== More Usage ===
+When line numbering is added with ''line'', long code lines will be wrapped.  See the example below.   When ''text'' is the selected language, and numbering is used, the behaviour resembles the use of ''pre'' tags with numbering and long-line wrapping.
+
+The following example shows how to color an HTML code listing:
+&lt;pre&gt;&lt;syntaxhighlight lang=&quot;html4strict&quot; line start=&quot;100&quot; highlight=&quot;5&quot; enclose=&quot;div&quot;&gt;
+HTML module goes here...
+&lt;/syntaxhighlight&gt;
+&lt;/pre&gt;  
+A typical result is just: 
+&lt;syntaxhighlight lang=&quot;html4strict&quot; line start=&quot;100&quot; highlight=&quot;5&quot; enclose=&quot;div&quot;&gt;
+&lt;!--This is a comment. Comments are not displayed in the browser--&gt;
+&lt;table align=center style=&quot;background: ivory;color:maroon;font-style:italic;font-family:arial;font-weight:bold;font-size:10pt;&quot;&gt; 
+&lt;tr&gt;&lt;th&gt; Heading 1 &lt;/th&gt;&lt;th&gt; Heading 2 &lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;padding:10px;&quot;&gt; This is cell 1 text &lt;/td&gt;
+&lt;td style=&quot;padding:10px;&quot;&gt; This is cell 2 text &lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/syntaxhighlight&gt;
+
+== Supported languages ==
+These are the languages known by GeSHi that can be used in the '''lang''' parameter. 
+
+&lt;small&gt;Note that installed GeSHi version (can be revealed by previewing e.g. &lt;code&gt;&amp;lt;syntaxhighlight lang=&quot;-&quot;&amp;gt;&amp;lt;/syntaxhighlight&amp;gt;&lt;/code&gt;) might not be the most recent version;  see [[bugzilla:10967]] for Wikimedia sites.&lt;/small&gt;
+
+{| class=&quot;wikitable&quot; style=&quot;float:left&quot;
+!Code||Language
+|-
+|&lt;code&gt;abap&lt;/code&gt;||[[:en:ABAP|ABAP]]
+|-
+|&lt;code&gt;actionscript&lt;/code&gt;||[[:en:ActionScript|ActionScript]]
+|-
+|&lt;code&gt;ada&lt;/code&gt;||[[:en:Ada (programming language)|Ada]]
+|-
+|&lt;code&gt;apache&lt;/code&gt;||[[:en:Apache HTTP Server|Apache Configuration]]
+|-
+|&lt;code&gt;applescript&lt;/code&gt;||[[:en:AppleScript|AppleScript]]
+|-
+|&lt;code&gt;asm&lt;/code&gt;||[[:en:Assembly language|Assembly]]
+|-
+|&lt;code&gt;asp&lt;/code&gt;||[[:en:Active Server Pages|Active Server Pages (ASP)]]
+|-
+|&lt;code&gt;autoit&lt;/code&gt;||[[:en:AutoIt|AutoIt]]
+|-
+|&lt;code&gt;bash&lt;/code&gt;||[[:en:Bash (Unix shell)|Bash]]
+|-
+|&lt;code&gt;basic4gl&lt;/code&gt;||[[:en:Basic4GL|Basic4GL]]
+|-
+|&lt;code&gt;bf&lt;/code&gt;||[[:en:Brainfuck|Brainfuck]]
+|-
+|&lt;code&gt;blitzbasic&lt;/code&gt;||[[:en:Blitz BASIC|Blitz BASIC]]
+|-
+|&lt;code&gt;bnf&lt;/code&gt;||[[:en:Backus-Naur Form|Backus-Naur Form]]
+|-
+|&lt;code&gt;c&lt;/code&gt;||[[:en:C (programming language)|C]]
+|-
+|&lt;code&gt;c_mac&lt;/code&gt;||C (Mac)
+|-
+|&lt;code&gt;caddcl&lt;/code&gt;||[[:en:Dialog Control Language|AutoCAD DCL]]
+|-
+|&lt;code&gt;cadlisp&lt;/code&gt;||[[:en:AutoLISP|AutoLISP]]
+|-
+|&lt;code&gt;cfdg&lt;/code&gt;||CFDG
+|-
+|&lt;code&gt;cfm&lt;/code&gt;||[[:en:ColdFusion_Markup_Language|ColdFusion Markup Language]]
+|-
+|&lt;code&gt;cil&lt;/code&gt;||[[:en:Common_Intermediate_Language|Common Intermediate Language (CIL)]]
+|-
+|&lt;code&gt;cobol&lt;/code&gt;||[[:en:COBOL|COBOL]]
+|-
+|&lt;code&gt;cpp-qt&lt;/code&gt;||[[:en:Qt (toolkit)|C++ (Qt toolkit)]]
+|-
+|&lt;code&gt;cpp&lt;/code&gt;||[[:en:C++|C++]]
+|-
+|&lt;code&gt;csharp&lt;/code&gt;||[[:en:C Sharp (programming language)|C#]]
+|-
+|&lt;code&gt;css&lt;/code&gt;||[[:en:Cascading Style Sheets|Cascading Style Sheets (CSS)]]
+|-
+|&lt;code&gt;d&lt;/code&gt;||[[:en:D (programming language)|D]]
+|-
+|&lt;code&gt;delphi&lt;/code&gt;||[[:en:Delphi programming language|Delphi]]
+|-
+|&lt;code&gt;diff&lt;/code&gt;||[[:en:diff|Diff]]
+|-
+|&lt;code&gt;div&lt;/code&gt;||DIV
+|-
+|&lt;code&gt;dos&lt;/code&gt;||[[:en:DOS batch file|DOS batch file]]
+|-
+|&lt;code&gt;dot&lt;/code&gt;||[[:en:DOT language|DOT]]
+|-
+|&lt;code&gt;eiffel&lt;/code&gt;||[[:en:Eiffel (programming language)|Eiffel]]
+|-
+|&lt;code&gt;fortran&lt;/code&gt;||[[:en:Fortran|Fortran]]
+|-
+|&lt;code&gt;freebasic&lt;/code&gt;||[[:en:FreeBASIC|FreeBASIC]]
+|-
+|&lt;code&gt;gambas&lt;/code&gt;||[[:en:Gambas_programming_language|Gambas]]
+|-
+|&lt;code&gt;genero&lt;/code&gt;||Genero
+|-
+|&lt;code&gt;gettext&lt;/code&gt;||[[:en:GNU_gettext|GNU internationalization (i18n) library]]
+|-
+|&lt;code&gt;glsl&lt;/code&gt;||[[:en:GLSL|OpenGL Shading Language (GLSL)]]
+|-
+|&lt;code&gt;gml&lt;/code&gt;||[[:en:Game Maker Language|Game Maker Language (GML)]]
+|-
+|&lt;code&gt;gnuplot&lt;/code&gt;||[[:en:Gnuplot|gnuplot]]
+|-
+|&lt;code&gt;groovy&lt;/code&gt;||[[:en:Groovy (programming language)|Groovy]]
+|-
+|&lt;code&gt;haskell&lt;/code&gt;||[[:en:Haskell (programming language)|Haskell]]
+|-
+|&lt;code&gt;hq9plus&lt;/code&gt;||HQ9+
+|-
+|&lt;code&gt;html4strict&lt;/code&gt;||[[:en:HTML|HTML]]
+|-
+|&lt;code&gt;html5&lt;/code&gt;||[[:en:HTML5|HTML5]]
+|-
+|&lt;code&gt;idl&lt;/code&gt;||[[:en:Universal Network Objects|Uno IDL]]
+|-
+|&lt;code&gt;ini&lt;/code&gt;||[[:en:INI file|INI]]
+|-
+|&lt;code&gt;inno&lt;/code&gt;||[[:en:Inno Setup|Inno]]
+|-
+|&lt;code&gt;intercal&lt;/code&gt;||[[:en:INTERCAL|INTERCAL]]
+|-
+|&lt;code&gt;io&lt;/code&gt;||[[:en:Io (programming language)|Io]]
+|-
+|&lt;code&gt;java&lt;/code&gt;||[[:en:Java (programming language)|Java]]
+|-
+|&lt;code&gt;java5&lt;/code&gt;||[[:en:Java (programming language)|Java(TM) 2 Platform Standard Edition 5.0 ]]
+|-
+|&lt;code&gt;javascript&lt;/code&gt;||[[:en:JavaScript|JavaScript]]
+|-
+|&lt;code&gt;kixtart&lt;/code&gt;||[[:en:KiXtart|KiXtart]]
+|-
+|&lt;code&gt;klonec&lt;/code&gt;||Klone C
+|-
+|&lt;code&gt;klonecpp&lt;/code&gt;||Klone C++
+|-
+|&lt;code&gt;latex&lt;/code&gt;||[[:en:LaTeX|LaTeX]]
+|-
+|&lt;code&gt;lisp&lt;/code&gt;||[[:en:Lisp (programming language)|Lisp]]
+|-
+|&lt;code&gt;lolcode&lt;/code&gt;||[[:en:LOLCODE|LOLCODE]]
+|-
+|&lt;code&gt;lotusscript&lt;/code&gt;||[[:en:LotusScript|LotusScript]]
+|-
+|&lt;code&gt;lua&lt;/code&gt;||[[:en:Lua (programming language)|Lua]]
+|}
+{| class=&quot;wikitable&quot; style=&quot;float:left&quot;
+!Code||Language
+|-
+|&lt;code&gt;m68k&lt;/code&gt;||[[:en:Motorola 68000|Motorola 68000 Assembler]]
+|-
+|&lt;code&gt;make&lt;/code&gt;||[[:en:Make_(software)|make]]
+|-
+|&lt;code&gt;matlab&lt;/code&gt;||[[:en:MATLAB|MATLAB M]]
+|-
+|&lt;code&gt;mirc&lt;/code&gt;||[[:en:mIRC scripting language|mIRC scripting language]]
+|-
+|&lt;code&gt;mxml&lt;/code&gt;||[[:en:MXML|MXML]]
+|-
+|&lt;code&gt;mpasm&lt;/code&gt;||[[:en:PIC microcontroller|Microchip Assembler]]
+|-
+|&lt;code&gt;mysql&lt;/code&gt;||[[:en:MySQL|MySQL]]
+|-
+|&lt;code&gt;nsis&lt;/code&gt;||[[:en:Nullsoft Scriptable Install System|Nullsoft Scriptable Install System (NSIS)]]
+|-
+|&lt;code&gt;objc&lt;/code&gt;||[[:en:Objective-C|Objective-C]]
+|-
+|&lt;code&gt;ocaml-brief&lt;/code&gt;||[[:en:Objective Caml|OCaml]]
+|-
+|&lt;code&gt;ocaml&lt;/code&gt;||[[:en:Objective Caml|OCaml]]
+|-
+|&lt;code&gt;oobas&lt;/code&gt;||[[:en:StarOffice Basic|OpenOffice.org Basic]]
+|-
+|&lt;code&gt;oracle8&lt;/code&gt;||[[:en:PL/SQL|Oracle 8 SQL]]
+|-
+|&lt;code&gt;oracle11&lt;/code&gt;||[[:en:PL/SQL|Oracle 11 SQL]]
+|-
+|&lt;code&gt;pascal&lt;/code&gt;||[[:en:Pascal (programming language)|Pascal]]
+|-
+|&lt;code&gt;per&lt;/code&gt;||per
+|-
+|&lt;code&gt;perl&lt;/code&gt;||[[:en:Perl|Perl]]
+|-
+|&lt;code&gt;php-brief&lt;/code&gt;||[[:en:PHP|PHP]]
+|-
+|&lt;code&gt;php&lt;/code&gt;||[[:en:PHP|PHP]]
+|-
+|&lt;code&gt;pixelbender&lt;/code&gt;||[[:en:Adobe_Pixel_Bender|Pixel Bender]]
+|-
+|&lt;code&gt;plsql&lt;/code&gt;||[[:en:PL/SQL|PL/SQL]]
+|-
+|&lt;code&gt;povray&lt;/code&gt;||[[:en:POV-Ray|Persistence of Vision Raytracer]]
+|-
+|&lt;code&gt;powershell&lt;/code&gt;||[[:en:Windows_PowerShell|Windows PowerShell]]
+|-
+|&lt;code&gt;progress&lt;/code&gt;||[[:en:OpenEdge_Advanced_Business_Language|OpenEdge Advanced Business Language]]
+|-
+|&lt;code&gt;prolog&lt;/code&gt;||[[:en:Prolog|Prolog]]
+|-
+|&lt;code&gt;providex&lt;/code&gt;||[[:en:ProvideX|ProvideX]]
+|-
+|&lt;code&gt;python&lt;/code&gt;||[[:en:Python (programming language)|Python]]
+|-
+|&lt;code&gt;qbasic&lt;/code&gt;||[[:en:QBasic|QBasic/QuickBASIC]]
+|-
+|&lt;code&gt;rails&lt;/code&gt;||[[:en:Ruby on Rails|Rails]]
+|-
+|&lt;code&gt;reg&lt;/code&gt;||[[:en:Windows Registry|Windows Registry]]
+|-
+|&lt;code&gt;robots&lt;/code&gt;||[[:en:Robots Exclusion Standard|robots.txt]]
+|-
+|&lt;code&gt;ruby&lt;/code&gt;||[[:en:Ruby (programming language)|Ruby]]
+|-
+|&lt;code&gt;sas&lt;/code&gt;||[[:en:SAS System|SAS]]
+|-
+|&lt;code&gt;scala&lt;/code&gt;||[[:en:Scala_(programming_language)|Scala]]
+|-
+|&lt;code&gt;scheme&lt;/code&gt;||[[:en:Scheme (programming language)|Scheme]]
+|-
+|&lt;code&gt;scilab&lt;/code&gt;||[[:en:Scilab|Scilab]]
+|-
+|&lt;code&gt;sdlbasic&lt;/code&gt;||[[:en:SdlBasic|SdlBasic]]
+|-
+|&lt;code&gt;smalltalk&lt;/code&gt;||[[:en:Smalltalk|Smalltalk]]
+|-
+|&lt;code&gt;smarty&lt;/code&gt;||[[:en:Smarty|Smarty]]
+|-
+|&lt;code&gt;sql&lt;/code&gt;||[[:en:SQL|SQL]]
+|-
+|&lt;code&gt;tcl&lt;/code&gt;||[[:en:Tcl|Tcl]]
+|-
+|&lt;code&gt;teraterm&lt;/code&gt;||[[:en:TeraTerm|Tera Term]]
+|-
+|&lt;code&gt;text&lt;/code&gt;||[[:en:Plain text|Plain text]]
+|-
+|&lt;code&gt;thinbasic&lt;/code&gt;||[[:en:thinBasic|thinBasic]]
+|-
+|&lt;code&gt;tsql&lt;/code&gt;||[[:en:Transact-SQL|Transact-SQL]]
+|-
+|&lt;code&gt;typoscript&lt;/code&gt;||[[:en:TYPO3|TypoScript]]
+|-
+|&lt;code&gt;vala&lt;/code&gt;||[[:en:Vala_(programming_language)|Vala]]
+|-
+|&lt;code&gt;vb&lt;/code&gt;||[[:en:Visual Basic|Visual Basic]]
+|-
+|&lt;code&gt;vbnet&lt;/code&gt;||[[:en:Visual Basic .NET|Visual Basic .NET]]
+|-
+|&lt;code&gt;verilog&lt;/code&gt;||[[:en:Verilog|Verilog]]
+|-
+|&lt;code&gt;vhdl&lt;/code&gt;||[[:en:VHSIC Hardware Description Language|VHDL]]
+|-
+|&lt;code&gt;vim&lt;/code&gt;||[[:en:Vimscript|Vimscript]]
+|-
+|&lt;code&gt;visualfoxpro&lt;/code&gt;||[[:en:Visual FoxPro|Visual FoxPro]]
+|-
+|&lt;code&gt;visualprolog&lt;/code&gt;||[[:en:Visual_Prolog|Visual Prolog]]
+|-
+|&lt;code&gt;whitespace&lt;/code&gt;||[[:en:Whitespace_(programming_language)|Whitespace]]
+|-
+|&lt;code&gt;winbatch&lt;/code&gt;||[[:en:Winbatch|Winbatch]]
+|-
+|&lt;code&gt;xml&lt;/code&gt;||[[:en:XML|XML]]
+|-
+|&lt;code&gt;xorg_conf&lt;/code&gt;||[[:en:Xorg.conf|Xorg.conf]]
+|-
+|&lt;code&gt;xpp&lt;/code&gt;||[[:en:Microsoft_Dynamics_AX|X++]]
+|-
+|&lt;code&gt;z80&lt;/code&gt;||[[:en:Zilog Z80|ZiLOG Z80 Assembler]]
+|}
+&lt;div style=&quot;clear:both&quot;&gt;&lt;/div&gt;
+
+== Extra features ==
+=== Default Source Language ===
+Added in [[rev:50693]].
+
+If the site mainly quotes the source code of a specific programming language, it would be helpful to set a default language.
+
+To do so, add a new variable to LocalSettings.php, just after the require_once line. We set [[:en:C (programming language)|C programming language]] as an example:
+&lt;syntaxhighlight lang=&quot;php&quot;&gt;
+require_once(&quot;$IP/extensions/SyntaxHighlight_GeSHi/SyntaxHighlight_GeSHi.php&quot;);
+$wgSyntaxHighlightDefaultLang = &quot;c&quot;;
+&lt;/syntaxhighlight&gt;
+
+== Installation ==
+The MediaWiki extension requires the GeSHi project files ([[http://sourceforge.net/projects/geshi/files/ from SourceForge]) to work!
+To make this easier, the extension in git includes the Geshi project in a subdirectory named &lt;code&gt;geshi&lt;/code&gt;.
+
+''Notes:''
+* GeSHi 1.1.2alpha3 does not work with the MediaWiki extension.
+* You can delete the &lt;tt&gt;extensions/SyntaxHighlight_GeSHi/geshi/docs&lt;/tt&gt; directory to save a few megabytes.
+
+=== Step 1: downloading ===
+Use a Git tool to clone https://gerrit.wikimedia.org/r/p/mediawiki/extensions/SyntaxHighlight_GeSHi.git in the extensions directory of your wiki.  For example using the Git command-line tool:
+
+&lt;syntaxhighlight lang=&quot;bash&quot;&gt;git clone https://gerrit.wikimedia.org/r/p/mediawiki/extensions/SyntaxHighlight_GeSHi.git&lt;/syntaxhighlight&gt;
+
+Or you can use the [[Special:ExtensionDistributor|ExtensionDistributor]].
+
+=== Step 2: Installation ===
+
+Add this line to the end of your [[Manual:LocalSettings.php|LocalSettings.php]]:
+&lt;syntaxhighlight lang=&quot;php&quot;&gt;
+require_once(&quot;$IP/extensions/SyntaxHighlight_GeSHi/SyntaxHighlight_GeSHi.php&quot;);
+&lt;/syntaxhighlight&gt;
+
+; GeSHi installation (optional) 
+
+If you didn't put GeSHi in the &lt;tt&gt;extensions/SyntaxHighlight_GeSHi/geshi&lt;/tt&gt; directory, then change the following line in &lt;tt&gt;SyntaxHighlight_GeSHi.class.php&lt;/tt&gt; to suit the path of
+your geshi.php file
+&lt;syntaxhighlight lang=&quot;php&quot;&gt;
+require( 'geshi/geshi.php' );
+&lt;/syntaxhighlight&gt;
+
+Sometimes you will need to add the absolute path to geshi (/var/www/html/.../geshi/geshi.php)
+
+Here's a shortcut using the PHP [http://php.net/manual/function.dirname.php &lt;nowiki&gt;dirname()&lt;/nowiki&gt;] function with the magic [http://php.net/manual/language.constants.predefined.php &lt;nowiki&gt;__FILE__&lt;/nowiki&gt;] constant:
+&lt;syntaxhighlight lang=&quot;php&quot;&gt;
+require(dirname(__FILE__).'/geshi/geshi.php');
+&lt;/syntaxhighlight&gt;
+
+== Configuration ==
+If you want the dashed border like for &lt;tt&gt;&lt;nowiki&gt;&lt;pre&gt;&lt;/nowiki&gt;&lt;/tt&gt; tags you have to add them again.
+
+==== Method 1: CSS file ====
+:''This method requires [[rev:52346|r52346]] or higher of this extension.''
+
+Add to [[MediaWiki:Geshi.css]], [[MediaWiki:Monobook.css]] or [[MediaWiki:Common.css]] pages:
+&lt;syntaxhighlight lang=&quot;css&quot;&gt;
+/* CSS placed here will be applied to GeSHi syntax highlighting */
+div.mw-geshi {
+  padding: 1em;
+  margin: 1em 0;
+  border: 1px dashed #2f6fab;
+  overflow: auto;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-size:12px;
+  font-family: &quot;Courier 10 Pitch&quot;, Courier, monospace;
+}
+ 
+.gml.source-gml .kw0 {color: #FF0000; }
+.gml.source-gml .kw1 {color: #006699; font-weight: normal; } // if var for
+.gml.source-gml .kw2 {color: #FF0000; }
+.gml.source-gml .kw3 {color: #006699; } // all the gml functions
+.gml.source-gml .kw4 {color: #FF0000; }
+.gml.source-gml .kw5 {color: #FF0000; }
+.gml.source-gml .kw6 {color: #FF0000; }
+.gml.source-gml .kw7 {color: #FF0000; }
+.gml.source-gml .kw8 {color: #FF0000; }
+.gml.source-gml .kw9 {color: #FF0000; }
+.gml.source-gml .nu0 {color: #0000FF; } // numbers
+.gml.source-gml .co1 {color: #008200; } // regular comment
+.gml.source-gml .coMULTI {color: #008200; } // multi-line comment
+.gml.source-gml .es0 {color: #0000FF; }
+.gml.source-gml .st0 {color: #0000FF; }
+.gml.source-gml .br0 {color: #000000; }
+.gml.source-gml .sy0 {color: #000000; }
+.gml.source-gml .li1 {color: #FF0000; }
+.gml.source-gml .li2 {color: #FF0000; }&lt;/syntaxhighlight&gt;
+
+This will give all GeSHi output (except for &lt;tt&gt;enclose=&quot;none&quot;&lt;/tt&gt;) a dashed border almost identical to &amp;lt;pre&amp;gt; in monobook/main.css
+
+==== Method 2: Inline CSS ====
+
+You can also edit the SyntaxHighlight_GeSHi.class.php around line 215 (Line 264 in SVN trunk 82481). Look for this:
+&lt;syntaxhighlight lang=&quot;php&quot;&gt;
+$css[] = &quot;\tline-height: normal; border: 0px none white;&quot;;
+&lt;/syntaxhighlight&gt;
+and change it to:
+&lt;syntaxhighlight lang=&quot;php&quot;&gt;
+$css[] = &quot;\tline-height: normal; border: 1px dashed #2f6fab;&quot;;
+&lt;/syntaxhighlight&gt;
+On a Unix-like system simply type this command in the directory containing &quot;SyntaxHighlight_GeSHi.class.php&quot;:
+&lt;syntaxhighlight lang=&quot;bash&quot;&gt;
+sed -i 's/$css\[\] = &quot;\\tline-height: normal; border: 0px none white;&quot;;/
+&lt;!!!continued... THE LINE ABOVE AND THE LINE BELOW ARE ALL ONE LINE!&gt; 
+$css\[\] = &quot;\\tline-height: normal; border: 1px dashed #2f6fab;&quot;;/g' \
+SyntaxHighlight_GeSHi.class.php
+&lt;/syntaxhighlight&gt;
+Link to Extension Talk (2008): [[Extension talk:SyntaxHighlight GeSHi/Archive 2008#Problem with CSS: Default style for pre is overwritten]]
+:''See also [[rev:52346]].''
+* If you already add the extension to LocalSettings.php before changing this, comment it out via &quot;#&quot; and refresh the page, then remove the # and refresh one more time.
+
+==== Default DIV Based Rendering ====
+
+Long strings will cause the page width to blow up when rendered on a web page.  The solution to this is to use the enclose=&quot;div&quot; tag, this can be enabled by default by editing SyntaxHighlight_GeSHi.class.php near line 156.  Look for the following:
+&lt;syntaxhighlight lang=&quot;php&quot;&gt;
+...
+if ( isset( $args['enclose'] ) ) {
+  if ( $args['enclose'] === 'div' ) {
+    $enclose = GESHI_HEADER_DIV;
+  } elseif ( $args['enclose'] === 'none' ) {
+    $enclose = GESHI_HEADER_NONE;
+  }
+}
+...
+&lt;/syntaxhighlight&gt;
+and append an ''else'' case to the if statement:
+&lt;syntaxhighlight lang=&quot;php&quot; highlight=&quot;9&quot;&gt;
+...
+if ( isset( $args['enclose'] ) ) {
+  if ( $args['enclose'] === 'div' ) {
+    $enclose = GESHI_HEADER_DIV;
+  } elseif ( $args['enclose'] === 'none' ) {
+    $enclose = GESHI_HEADER_NONE;
+  }
+} else {
+  $enclose = GESHI_HEADER_DIV;
+}
+...
+&lt;/syntaxhighlight&gt;
+
+== Bugs and Limitations ==
+''You may [https://bugzilla.wikimedia.org/enter_bug.cgi?product=MediaWiki%20extensions report bugs by clicking here].''
+
+== See also ==
+* [[Extension:GeSHiCodeTag|GeSHiCodeTag]] - A working alternative extension that also uses Geshi
+* [http://qbnz.com/highlighter GeSHi - Generic Syntax Highlighter]
+* [[Extension:ASHighlight|ASHighlight]] (MediaWiki support for Andre Simon's &lt;tt&gt;highlight&lt;tt&gt; utility)
+* [[Extension:Geshi|Geshi]] includes every component - no additional downloads
+* [[Extension:Include|Include]] -- yet another source code syntax highlighter
+* [[Extension:SyntaxHighlight GeSHi ParserFunction|SyntaxHighlight GeSHi ParserFunction]] -- Parser function based alternative, can be used with [[Semantic MediaWiki]]
+* [[Extension:GoogleCodePrettify|GoogleCodePrettify]] - syntax highlighter that uses Google Code Prettify library.
+* [[Extension:SyntaxHighlighter|SyntaxHighlighter]] - syntax highlighter that uses SyntaxHighlighter library.
+* [[Extension:SyntaxHighlight GeSHi remote|SyntaxHighlight GeSHi remote]] - a patch to support highlighting text retrieved from a URL.
+* [[Extension:ViewFiles|ViewFiles]] - an extension, dependent on this one, to support highlighting text from files viewed via a special page.
+
+{{OnWikimedia}}
+{{languages}}
+
+[[Category:Extensions]]</text>
+    </revision>
+  </page>
+  <page>
+    <title>Java</title>
+    <ns>0</ns>
+    <id>6</id>
+    <revision>
+      <id>22</id>
+      <parentid>17</parentid>
+      <timestamp>2013-03-12T18:48:08Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <sha1>6l8uzzarhgleqkipc6m9cnueookx7uf</sha1>
+      <text xml:space="preserve" bytes="118">&lt;syntaxhighlight lang=&quot;java&quot;&gt;
+public void main()
+{
+  System.out.println(&quot;HI&quot;);
+}
+&lt;/syntaxhighlight&gt;
+
+[[Category:Java]]</text>
+    </revision>
+  </page>
+  <page>
+    <title>Java - Strings</title>
+    <ns>0</ns>
+    <id>10</id>
+    <revision>
+      <id>20</id>
+      <parentid>12</parentid>
+      <timestamp>2013-03-12T18:47:33Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <sha1>9igx8un2j0lurpeyj8zj5vrkwfu22yr</sha1>
+      <text xml:space="preserve" bytes="17">[[Category:Java]]</text>
+    </revision>
+  </page>
+  <page>
+    <title>Main Page</title>
+    <ns>0</ns>
+    <id>1</id>
+    <revision>
+      <id>27</id>
+      <parentid>26</parentid>
+      <timestamp>2013-03-12T18:54:49Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <sha1>mvvpb6owb8sr9t0kxvsv7v985a3pzu6</sha1>
+      <text xml:space="preserve" bytes="97">'''Welcome!'''
+You can visit the main category of [[:Category:SocialCoding| Social Coding here]].</text>
+    </revision>
+  </page>
+  <page>
+    <title>PHP</title>
+    <ns>0</ns>
+    <id>5</id>
+    <revision>
+      <id>23</id>
+      <parentid>15</parentid>
+      <timestamp>2013-03-12T18:48:15Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <sha1>9lt44p11z5r6lxplr8lfihfn3129zyh</sha1>
+      <text xml:space="preserve" bytes="295">
+&lt;syntaxhighlight lang=&quot;php&quot;&gt;
+&lt;?php
+/* A simple php script */
+ 
+$choice = $_GET['foo'];
+if ( $choice == 1 )
+{
+  echo 'You like coffee!';
+}
+elseif ( $choice == 2 )
+{
+  echo 'I said, &quot;You like coffee!&quot;';
+}
+ 
+echo &quot;&lt;br /&gt;\&quot;Isn't coffee horrible though?\&quot;&quot;;
+ 
+?&gt;
+&lt;/syntaxhighlight&gt;
+
+[[Category:PHP]]</text>
+    </revision>
+  </page>
+  <page>
+    <title>PHP - Special words</title>
+    <ns>0</ns>
+    <id>9</id>
+    <revision>
+      <id>21</id>
+      <parentid>11</parentid>
+      <timestamp>2013-03-12T18:47:43Z</timestamp>
+      <contributor>
+        <ip>127.0.0.1</ip>
+      </contributor>
+      <sha1>doejkkqvdn0j9yra9fkxs5zz79inpvu</sha1>
+      <text xml:space="preserve" bytes="16">[[Category:PHP]]</text>
+    </revision>
+  </page>
+</mediawiki>

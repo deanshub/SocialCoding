@@ -1,0 +1,22 @@
+download mediawiki v. 1.20.3
+extract
+add alias to http://localhost/socialWiki and point it to the extracted data of the mediawiki
+
+go to http://localhost/socialWiki/index.php and start insalling
+
+db host:			localhost
+db name:			socialwiki
+db table prefix:	social
+db user:			root
+db password:
+storage engine:		InnoDB
+db character set:	UTF-8
+name of wiki:		socialWiki
+project namespace:	same as wiki name
+user:				sct
+password:			sct123
+im bored!
+
+copy the LocalSettings.php to the root location of the wiki
+
+download geshi and geshi highlighter from our dropbox

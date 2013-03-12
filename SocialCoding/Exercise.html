@@ -1,5 +1,37 @@
+<!DOCTYPE html>
 <html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<style type="text/css" media="screen">
+    #editor { 
+        width: 500px;
+        height: 200px;
+    }
+    .EditorFrame{
+    	width: 300px;
+    	height: 300px;
+    	color: blue;
+    }
+</style>
+	</head>
 	<body>
-		YEAHHHHHH
+		<div>
+			sdl;fjklsdjkj
+			lkjsdl;kjf
+			jl;askjkjfsd
+
+		</div>
+		<div class="EditorFrame">
+			<div id="editor">
+				YEAHHHHHH2
+			</div>
+		</div>
+
+		<script src="src/ace/ace.js" type="text/javascript" charset="windows-1255"></script>
+		<script type="text/javascript">
+			var editor = ace.edit("editor");
+    		editor.setTheme("ace/theme/chrome");
+    		editor.getSession().setMode("ace/mode/javascript");
+		</script>
 	</body>
 </html>

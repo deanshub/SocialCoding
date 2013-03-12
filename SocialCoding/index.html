@@ -2,12 +2,7 @@
 	<head>
 		<link rel="stylesheet" href="src/internalSrc/ui.css" type="text/css"/>
 		<script src="src/jQuery/jquery-1.9.1.min.js"></script>
-		<script type="text/javascript">
-			$.noConflict();
-			jQuery.get('http://en.wikipedia.org/w/api.php?format=json&action=query&titles=Java&prop=categories&clshow=!hidden',function(data,status) {
-		    	alert(data.query);
-			},'html');
-		</script>
+		<script type="text/javascript" src="src/internalSrc/sc.js"/>
 	</head>
 	<body class="CenteredBody">
 		<div class="HomePageTitle">

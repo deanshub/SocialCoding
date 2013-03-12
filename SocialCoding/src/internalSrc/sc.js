@@ -25,15 +25,8 @@ $.noConflict();
 				});
 			});
 
-jQuery(document).ready(function(){
-	loadIssues();
-});
-
-function loadIssues(){
-	var issues = jQuery.ajax( 'https://api.github.com/repos/deanshub/SocialCoding/issues',
-		{cache:false,dataType:'json',xhrFields: {withCredentials: true}})
-	.success(function(issuse){
-			jQuery('#issue').text(issuse[0].title);
-			jQuery('#issueDesc').text(issuse[0].body);
-		});
+function getWikiCategories(categoryName){
+	jQuery.get('http://en.wikipedia.org/w/api.php?format=json&action=query&titles=Java&prop=categories&clshow=!hidden',function(data,status) {
+		    	alert(data.query);
+			},'html');
 }

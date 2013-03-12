@@ -1,5 +1,5 @@
 #editor{ 
-	width: 500px;
+	
     height: 200px;
 }
 .LowerPart {
@@ -7,21 +7,15 @@
    	height: 300px;
     color: blue;
 }
-.UpperPart{
+.ExerciseUpperPart{
 
 }
 .HomePageSubjectsTable{
 	width: 300px;
 	height: 300px;
 }
-.HomePageBody{
+.CenteredBody{
 	text-align: center;
-}
-div.ColoredRow:nth-child(even){
-	background-color: #F2F2F2;
-}
-div.ColoredRow:nth-child(odd){
-	background-color: #B7CFE0;
 }
 .HomePageTitle{
 	margin-top: 50;

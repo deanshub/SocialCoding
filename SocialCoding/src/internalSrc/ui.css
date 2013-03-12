@@ -124,3 +124,40 @@ ul.nav li a:hover {
 }
 
 /***************** navigation box end ******************/
+
+.coolButton{
+  position: relative;
+    color: white;
+    text-decoration: none;
+    text-shadow: -1px -1px rgb(0, 0, 236);
+    background-color: rgba(5, 159, 219, 1);
+    font-family: 'Yanone Kaffeesatz';
+    font-weight: 700;
+    font-size: 3em;
+    display: block;
+    padding: 4px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 9px 0px rgba(5, 82, 219, 1), 0px 9px 25px rgba(0,0,0,.7);
+    -moz-box-shadow: 0px 9px 0px rgba(5, 82, 219, 1), 0px 9px 25px rgba(0,0,0,.7);
+    box-shadow: 0px 9px 0px rgba(5, 82, 219, 1), 0px 9px 25px rgba(0,0,0,.7);
+    margin: 30px auto;
+    width: 160px;
+    text-align: center;
+    cursor: pointer;
+  
+  -webkit-transition: all .1s ease;
+  -moz-transition: all .1s ease;
+  -ms-transition: all .1s ease;
+  -o-transition: all .1s ease;
+  transition: all .1s ease;
+}
+
+.coolButton:active{
+   -webkit-box-shadow: 0px 3px 0px rgba(5, 82, 219, 1), 0px 3px 6px rgba(0,0,0,.9);
+    -moz-box-shadow: 0px 3px 0px rgba(5, 82, 219, 1), 0px 3px 6px rgba(0,0,0,.9);
+    box-shadow: 0px 3px 0px rgba(5, 82, 219, 1), 0px 3px 6px rgba(0,0,0,.9);
+    position: relative;
+    top: 6px;
+}

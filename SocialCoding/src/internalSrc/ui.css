@@ -161,3 +161,7 @@ ul.nav li a:hover {
     position: relative;
     top: 6px;
 }
+
+#userCode{
+  display: none;
+}

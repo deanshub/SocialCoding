@@ -4,6 +4,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<link rel="stylesheet" href="src/internalSrc/ui.css" type="text/css"/>
 		<script type="text/javascript" src="src/jQuery/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="src/garlic/garlic.min.js"></script>
 		<script type="text/javascript" src="src/internalSrc/sc.js"></script>
 		<script type="text/javascript" src="src/internalSrc/exercise.js"></script>
 	</head>
@@ -30,16 +31,14 @@
 			</div>
 		</div>
 		<br/>
-		<div class="ExerciseLowerPart">
-			<div id="editor"/>
-		</div>
-		<a class="coolButton" >done!</a>
-
+		<form data-destroy="false" data-domain="true" data-persist="garlic" method="POST">
+			<div class="ExerciseLowerPart">
+				<div class="garlic-auto-save" id="editor"/>
+			</div>
+			<textarea id="userCode"></textarea>
+			<a class="coolButton" >done!</a>
+		</form>
 		<script src="src/ace/ace.js" type="text/javascript" charset="windows-1255"></script>
-		<script type="text/javascript">
-			var editor = ace.edit("editor");
-    		editor.setTheme("ace/theme/monokai");
-    		editor.getSession().setMode("ace/mode/javascript");
-		</script>
+		
 	</body>
 </html>

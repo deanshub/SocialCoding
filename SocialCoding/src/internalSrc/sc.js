@@ -27,12 +27,12 @@ function buildListFromCategories(categories, isMenu){
 	
 	for (var index = 0; index < categories.length; index++){
 		var listItemTitle = categories[index].title.split(":")[1];
-		ulTag.append('<li><a href=\"#\">' + listItemTitle + '</li>')
+		ulTag.append('<li><a href=\"learning.html?Subject=' + listItemTitle + '\">' + listItemTitle + '</li>')
 	}
 }
 
-function loadWikiMenues(isMenu){
-	var res = getWikiCategorySubcategories("Learned%20in%20SocialCoding");
+function loadWikiMenues(categories, isMenu){
+	var res = getWikiCategorySubcategories(categories);
 	var Categories = res.categorymembers;
 	buildListFromCategories(Categories,isMenu);
 }

@@ -69,4 +69,11 @@ jQuery(function(){
 	loadWikiPageFromParam();
 
 	isFirstLoad = false;
+
+	buildMenuBySubject();
 });
+
+function buildMenuBySubject(){
+	var urlParamSubject = GetURLParameter('Subject');
+	loadWikiPagesMenu(urlParamSubject);
+}

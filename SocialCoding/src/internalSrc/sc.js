@@ -10,8 +10,20 @@ function getWikiCategorySubcategories(categoryName){
 	return res;
 }
 
-function buildListFromCategories(categories){
+function buildListFromCategories(categories, isMenu){
+	var mainDiv = jQuery(".dynamicList");
+	if (isMenu){
+		mainDiv.attr("class", "navbox");
+		mainDiv.append('<ul class=\"nav\"></ul>');
+	}
+	else{
+		mainDiv.append('<ul class=\"homepageList\"></ul>');
+	}
+
+	var ulTag = mainDiv.children('ul');
+	
 	for (var index = 0; index < categories.length; index++){
-		alert(categories[index].title);
+		var listItemTitle = categories[index].title.split(":")[1];
+		ulTag.append('<li><a href=\"#\">' + listItemTitle + '</li>')
 	}
 }

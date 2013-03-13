@@ -33,7 +33,7 @@ div.HomePageSubjects {
   margin-right: auto;
 }
  
-ul {
+ul.HomepageList {
   list-style-type: none;
   margin: 0;
   padding: 0;

@@ -1,3 +1,3 @@
 jQuery(document).ready(function(){
-	loadWikiMenues("Learned%20in%20SocialCoding", false);
+	loadWikiMenues("Learned_in_SocialCoding", false);
 });

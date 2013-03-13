@@ -2,11 +2,14 @@ $.noConflict();
 
 function getWikiCategorySubcategories(categoryName){
 	var res;
-	jQuery.ajax({ url : 'http://localhost/wiki/api.php?format=json&action=query&list=categorymembers&cmtitle=Category:' + categoryName + '&cmtype=subcat',
+	jQuery.ajax({ url : 'http://localhost/socialWiki/api.php?format=json&action=query&list=categorymembers&cmtitle=Category:' + categoryName + '&cmtype=subcat',
 				  async : false,
 				  success : function(data,status) {
 		    					res = data.query;
-							}});
+							},
+					error:function(){
+						res = {'categorymembers':''};
+					}});
 	return res;
 }
 
@@ -26,4 +29,10 @@ function buildListFromCategories(categories, isMenu){
 		var listItemTitle = categories[index].title.split(":")[1];
 		ulTag.append('<li><a href=\"#\">' + listItemTitle + '</li>')
 	}
+}
+
+function loadWikiMenues(isMenu){
+	var res = getWikiCategorySubcategories("Learned%20in%20SocialCoding");
+	var Categories = res.categorymembers;
+	buildListFromCategories(Categories,isMenu);
 }

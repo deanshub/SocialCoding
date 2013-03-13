@@ -28,7 +28,7 @@ function loadIssues(){
 					async:false,
 					url : 'https://api.github.com/repos/' + projId + '/issues',
 					success:function(issuse){
-						issuesArr.concat(issuse);
+						issuesArr = issuesArr.concat(issuse);
 					}
 				});				
 			}

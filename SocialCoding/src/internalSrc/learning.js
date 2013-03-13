@@ -72,8 +72,3 @@ jQuery(function(){
 
 	buildMenuBySubject();
 });
-
-function buildMenuBySubject(){
-	var urlParamSubject = GetURLParameter('Subject');
-	loadWikiPagesMenu(urlParamSubject);
-}

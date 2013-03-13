@@ -3,7 +3,8 @@ var editor;
 jQuery(document).ready(function(){
 	loadAce();
 	loadIssues();
-	loadWikiMenues("Learned_in_SocialCoding", true);
+	//loadWikiMenues("Learned_in_SocialCoding", true);
+	buildMenuBySubject();
 	addMenuAnimation();
 	slideClose();
 	activateGarlic();

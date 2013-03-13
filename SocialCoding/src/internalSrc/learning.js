@@ -2,6 +2,7 @@ jQuery(function(){
 	var searchBox = jQuery('#searchBox');
 	var contentDiv = jQuery('#content');
 	var isFirstLoad = true;
+	var shoulChangeUrl = true;
 
 	searchBox.autocomplete({
 		select: function( event, ui ) {
@@ -11,6 +12,7 @@ jQuery(function(){
 
 	function showPage(pageName) {
 		var urlName = pageName.replace(' ', '_');
+		changeUrl(urlName);
 
 		jQuery.ajax({
 			url : 'http://localhost/socialWiki/index.php/' + urlName,
@@ -25,10 +27,19 @@ jQuery(function(){
 			}
 		});
 	}
-	
-	function changeUrl() {
-		
+
+	function changeUrl(pageName) {
+		if (shoulChangeUrl) {
+			var href = window.location.href.substring(0, window.location.href.indexOf('?') + 1);
+			window.history.pushState(pageName,pageName, href + 'Subject=' + pageName);
+		}
 	}
+
+	window.onpopstate = function(event) {
+		shoulChangeUrl = false;
+		loadWikiPageFromParam();
+		shoulChangeUrl = true;
+	};
 
 	searchBox.keypress(function(){
 		jQuery.ajax({
@@ -47,11 +58,15 @@ jQuery(function(){
 		});
 	});
 
-	var urlParamSubject = GetURLParameter('Subject');
-	if (urlParamSubject != undefined) {
-		searchBox.val(urlParamSubject);
-		showPage(urlParamSubject);
+	function loadWikiPageFromParam() {
+		var urlParamSubject = GetURLParameter('Subject');
+		if (urlParamSubject != undefined) {
+			searchBox.val(urlParamSubject);
+			showPage(urlParamSubject);
+		}
 	}
+
+	loadWikiPageFromParam();
 
 	isFirstLoad = false;
 

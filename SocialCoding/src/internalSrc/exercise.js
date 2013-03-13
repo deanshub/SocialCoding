@@ -10,12 +10,36 @@ jQuery(document).ready(function(){
 });
 
 function loadIssues(){
-	var issues = jQuery.ajax( 'https://api.github.com/repos/deanshub/SocialCoding/issues',
-		{cache:false,dataType:'json',xhrFields: {withCredentials: true}})
-	.success(function(issuse){
-			jQuery('#issue').text(issuse[0].title);
-			jQuery('#issueDesc').text(issuse[0].body);
-		});
+	var prefix = 'https://github.com/';
+	var issuesArr = [];
+	jQuery.ajax({
+		url : 'getProjects.php',
+		success : function(projects){
+			eval("projects = (" + projects + ")");
+			for (var i = 0; i < projects.length; i++) {
+				var projId = projects[i];
+				projId = projId.substring(projId.indexOf(prefix) + prefix.length, projId.lastIndexOf('.git'));
+
+				jQuery.ajax( {
+					cache:false,
+					dataType:'json',
+					xhrFields: {withCredentials: true}, 
+					async:false,
+					url : 'https://api.github.com/repos/' + projId + '/issues',
+					success:function(issuse){
+						issuesArr.concat(issuse);
+					}
+				});				
+			}
+
+			if (issuesArr.length > 0) {
+				var randomnumber=Math.floor(Math.random()*issuesArr.length);
+				jQuery('#issue').text(issuesArr[randomnumber].title);
+				jQuery('#issueDesc').text(issuesArr[randomnumber].body);
+			}
+		}
+	});	
+
 }
 
 function addMenuAnimation(){

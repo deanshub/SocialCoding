@@ -14,7 +14,7 @@ while ($line = mysql_fetch_array($result, MYSQL_ASSOC)) {
         echo "'$col_value',";
     }
 }
-echo "]";*/
+echo "]";
 
 // Free resultset
 mysql_free_result($result);

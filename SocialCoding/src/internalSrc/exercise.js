@@ -4,6 +4,7 @@ jQuery(document).ready(function(){
 	loadAce();
 	loadIssues();
 	addMenuAnimation();
+	loadWikiMenues(true)
 	slideClose();
 	activateGarlic();
 });

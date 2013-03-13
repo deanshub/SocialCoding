@@ -88,7 +88,7 @@ header{
 .navbox {
   position: absolute;
   top: 20px;
-  left: -100px;
+  left: -130px;
   z-index: 5;
 }
 

@@ -1,5 +1,18 @@
 $.noConflict();
 
+function getWikiCategoryPages(categoryName){
+	var res;
+	jQuery.ajax({ url : 'http://localhost/socialWiki/api.php?format=json&action=query&list=categorymembers&cmtitle=Category:' + categoryName + '&cmtype=page',
+				  async : false,
+				  success : function(data,status) {
+		    					res = data.query;
+							},
+					error:function(){
+						res = {'categorymembers':''};
+					}});
+	return res;
+}
+
 function getWikiCategorySubcategories(categoryName){
 	var res;
 	jQuery.ajax({ url : 'http://localhost/socialWiki/api.php?format=json&action=query&list=categorymembers&cmtitle=Category:' + categoryName + '&cmtype=subcat',
@@ -27,14 +40,31 @@ function buildListFromCategories(categories, isMenu){
 	
 	for (var index = 0; index < categories.length; index++){
 		var listItemTitle = categories[index].title.split(":")[1];
-		ulTag.append('<li><a href=\"learning.html?Subject=' + listItemTitle + '\">' + listItemTitle + '</li>')
+		var itemLinkVal = listItemTitle;
+		if (listItemTitle == undefined){
+			var listItemTitle = categories[index].title;
+			var itemWords = listItemTitle.split(' ');
+			if (itemWords.length > 1){
+				itemLinkVal = itemWords.join('_');
+			}
+			else{
+				itemLinkVal = listItemTitle;
+			}
+		}
+		ulTag.append('<li><a href=\"learning.html?Subject=' + itemLinkVal + '\">' + listItemTitle + '</li>')
 	}
 }
 
-function loadWikiMenues(categories, isMenu){
-	var res = getWikiCategorySubcategories(categories);
+function loadWikiMenues(category, isMenu){
+	var res = getWikiCategorySubcategories(category);
 	var Categories = res.categorymembers;
 	buildListFromCategories(Categories,isMenu);
+}
+
+function loadWikiPagesMenu(category){
+	var res = getWikiCategoryPages(category);
+	var Categories = res.categorymembers;
+	buildListFromCategories(Categories, true);
 }
 
 function GetURLParameter(sParam) {

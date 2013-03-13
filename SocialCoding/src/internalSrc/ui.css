@@ -165,3 +165,7 @@ ul.nav li a:hover {
 #userCode{
   display: none;
 }
+
+.logo{
+  margin: auto;
+}

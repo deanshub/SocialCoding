@@ -54,10 +54,10 @@ function buildListFromCategories(categories, isMenu, headCategory, isAjax){
 		}
 		allCategories[index] = itemLinkVal;
 		if (isAjax){
-			ulTag.append('<li><a href="#" onclick="showPage(' + itemLinkVal + ')">' + listItemTitle + '</li>')
+			ulTag.append('<li><a href="#" onclick="showPage(' + itemLinkVal + ')">' + listItemTitle + '</li>');
 		}
 		else{
-			ulTag.append('<li><a href=\"learning.html?Subject=' + itemLinkVal + '\">' + listItemTitle + '</li>')
+			ulTag.append('<li><a href=\"learning.html?Subject=' + itemLinkVal + '\">' + listItemTitle + '</li>');
 		}
 		
 	}

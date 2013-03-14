@@ -1,3 +1,6 @@
+body{
+  background:url(http://subtlepatterns.com/patterns/linedpaper.png);
+}
 #editor{ 
     text-align: left;
     height: 400px;
@@ -203,4 +206,9 @@ ul.nav li a:hover {
 
 .logo{
   margin: auto;
+}
+.smallLogo{
+  position: absolute;
+  right: 0px;
+  width: 210px;
 }

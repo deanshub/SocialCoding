@@ -10,6 +10,7 @@ jQuery(document).ready(function(){
 });
 
 function loadIssues(){
+	var urlParamSubject = GetURLParameter('Subject');
 	var prefix = 'https://github.com/';
 	var issuesArr = [];
 	jQuery.ajax({
@@ -26,10 +27,22 @@ function loadIssues(){
 					xhrFields: {withCredentials: true}, 
 					async:false,
 					url : 'https://api.github.com/repos/' + projId + '/issues',
-					success:function(issuse){
-						issuesArr = issuesArr.concat(issuse);
+					success:function(issues){
+						issuesArr = issuesArr.concat(issues);
 					}
-				});				
+				});
+			}
+
+			if (urlParamSubject != null) {
+				var filteredArr = [];
+				for (var issueIndex = 0; issueIndex < issuesArr.length; issueIndex++) {
+					for (var labelIndex = 0; labelIndex < issuesArr[issueIndex].labels.length; labelIndex++) {
+						if (urlParamSubject == issuesArr[issueIndex].labels[labelIndex].name) {
+							filteredArr.push(issuesArr[issueIndex]);
+						}
+					}
+				}
+				issuesArr = filteredArr;
 			}
 
 			if (issuesArr.length > 0) {

@@ -36,10 +36,45 @@ jQuery(function(){
 			xhrFields: {withCredentials: true},
 			success : function( data, textStatus, jqXHR ) {
 				alert(data);
+				loadProjectsTable();
 			},
 			error : function( jqXHR, textStatus, errorThrown ) {
 				alert('error');
 			}
 		});
 	});
+
+	repoUrl.keypress(function(e) {
+		var code = (e.keyCode ? e.keyCode : e.which);
+		if(code == 13) { //Enter keycode
+			sendButton.click();
+		}
+	});
+
+	function loadProjectsTable() {
+		jQuery.ajax({
+			type : 'GET',
+			url : 'getProjects.php',
+			data : {'repoUrl' : repoUrl.val()},
+			xhrFields: {withCredentials: true},
+			success : function(projects){
+				eval("projects = (" + projects + ")");
+				var table = jQuery('<table />');
+				for (var i = 0; i < projects.length; i++) {
+					var row = jQuery('<tr />');
+					var cell = jQuery('<td />');
+					var link = jQuery('<a target="_blank" />');
+					link.attr('href', projects[i]);
+					link.text(projects[i]);
+
+					cell.append(link);
+					row.append(cell);
+					table.append(row);
+				}
+				jQuery('#projectsDiv').html(table);
+			}
+		});
+	}
+
+	loadProjectsTable();
 });

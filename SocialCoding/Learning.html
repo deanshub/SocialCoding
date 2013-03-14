@@ -3,15 +3,26 @@
 		<link rel="stylesheet" href="src/jQuery/jquery-ui-1.10.1.custom/css/ui-lightness/jquery-ui-1.10.1.custom.min.css">
 		<link rel="stylesheet" href="http://localhost/socialWiki/load.php?debug=false&lang=en&modules=mediawiki.legacy.commonPrint%2Cshared%7Cskins.vector&only=styles&skin=vector&*" />
 		<link rel="stylesheet" href="src/internalSrc/ui.css" type="text/css"/>
+		<link href="src/buttons/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 		<script src="src/jQuery/jquery-1.9.1.min.js"></script>
 		<script src="src/jQuery/jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.min"></script>
 		<script type="text/javascript" src="src/internalSrc/sc.js"></script>
 		<script type="text/javascript" src="src/internalSrc/learning.js"></script>
+		<script src="src/buttons/animation.js" type="text/javascript" charset="UTF-8"></script>
 	</head>
 	<body>
+		<input class="hiddenCurrPage" type="text"></input>
 		<b>Search: </b><input id="searchBox" type="text"/>
 		<br>
-		<div id="content" style="height:90%"></div>
+		<div id="content" style="height:75%"></div>
+		<div id="pageNavigation">
+			<span id="button-container"> 
+				<a id="button" class="nextButton" href="#"> Next </a> 
+			</span>
+			<span id="button-container"> 
+				<a id="button" class="prevButton" href="#"> Previos </a> 
+			</span>
+		</div>
 		<div class="dynamicList"></div>
 	</body>
 </html>

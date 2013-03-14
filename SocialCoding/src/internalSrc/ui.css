@@ -82,6 +82,41 @@ header{
   box-shadow: 2px 2px gray;
 }
 
+input.hiddenCurrPage{
+  display: none;
+}
+
+div#pageNavigation{
+  margin-left: 10em;
+  padding: 1em;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAADElEQVQIHWNYfv0nAASgAnhGoPmuAAAAAElFTkSuQmCC);
+  background-image: url(http://localhost/socialWiki/skins/vector/images/border.png?2013-03-04T18:08:20Z)!ie;
+  background-position: top left;
+  background-repeat: repeat-y;
+  background-color: white;
+  color: black;
+  direction:ltr
+}
+
+
+div#pageNavigation{
+  line-height: 1.5em;
+}
+
+div#pageNavigation{
+  margin-left: 11em;
+  padding: 1.25em 1.5em 1.5em 1.5em;
+}
+
+.nextButton{
+  margin-left: 455px;
+  position: absolute;
+  display: none;
+}
+
+.prevButton{
+  display: none;
+}
 
 /***************** navigation box start ******************/
 

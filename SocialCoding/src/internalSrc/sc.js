@@ -37,6 +37,7 @@ function buildListFromCategories(categories, isMenu){
 	}
 
 	var ulTag = mainDiv.children('ul');
+	var allCategories = new Array();
 	
 	for (var index = 0; index < categories.length; index++){
 		var listItemTitle = categories[index].title.split(":")[1];
@@ -51,8 +52,11 @@ function buildListFromCategories(categories, isMenu){
 				itemLinkVal = listItemTitle;
 			}
 		}
+		allCategories[index] = itemLinkVal;
 		ulTag.append('<li><a href=\"learning.html?Subject=' + itemLinkVal + '\">' + listItemTitle + '</li>')
 	}
+
+	return allCategories;
 }
 
 function loadWikiMenues(category, isMenu){
@@ -64,7 +68,7 @@ function loadWikiMenues(category, isMenu){
 function loadWikiPagesMenu(category){
 	var res = getWikiCategoryPages(category);
 	var Categories = res.categorymembers;
-	buildListFromCategories(Categories, true);
+	return buildListFromCategories(Categories, true);
 }
 
 function GetURLParameter(sParam) {

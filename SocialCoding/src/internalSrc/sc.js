@@ -63,7 +63,7 @@ function buildListFromCategories(categories, isMenu, headCategory, isAjax){
 	}
 	
 	if ((isMenu) && (window.location.href.indexOf("exercise.html")==-1)){
-		ulTag.append('<li><a href=\"exercise.html?Subject=' + headCategory + '\">exercise ' + headCategory + '</li>');
+		ulTag.append('<li><a id="exerciseListItem" href=\"exercise.html?Subject=' + headCategory + '\">exercise ' + headCategory + '</li>');
 		ulTag.prepend('<li><a href=\"index.html\">Home</li>');
 	}
 
@@ -112,7 +112,7 @@ function showPage(pageName) {
 				contentDiv.html(jqData.find('#content').html()).append(jqData.find('style'));
 			},
 			error : function( jqXHR, textStatus, errorThrown ) {
-				alert('error');
+				//alert('error');
 			}
 		});
 	}

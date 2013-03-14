@@ -34,7 +34,7 @@ jQuery(function(){
 				}
 			},
 			error : function( jqXHR, textStatus, errorThrown ) {
-				alert('error');
+				//alert('error');
 			}
 		});
 	});
@@ -78,7 +78,12 @@ function buildNextPrevButtons(pageIndex){
 	if ((pageIndex < allCategories.length - 1)){
 		nextButton.show();
 		nextButton.bind('click', {currPage: pageIndex + 1}, buttonClick);
-	} else {
+	} 
+	else if((pageIndex == allCategories.length - 1)){
+		nextButton.show();
+		nextButton.bind('click', {currPage: pageIndex + 1, exercise: 'true'}, buttonClick);
+	}
+	else {
 		nextButton.hide();
 	}
 
@@ -96,8 +101,14 @@ function buildNextPrevButtons(pageIndex){
 
 function buttonClick(event){
 	var pageIndex = event.data.currPage;
-	buildNextPrevButtons(pageIndex);
-	showPage(allCategories[pageIndex]);
+	var isExercise = event.data.exercise;
+	if (isExercise){
+		window.location.replace(jQuery("#exerciseListItem").attr("href"));
+	}
+	else{
+		buildNextPrevButtons(pageIndex);
+		showPage(allCategories[pageIndex]);
+	}
 }
 
 

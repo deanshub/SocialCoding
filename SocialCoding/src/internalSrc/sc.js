@@ -26,7 +26,7 @@ function getWikiCategorySubcategories(categoryName){
 	return res;
 }
 
-function buildListFromCategories(categories, isMenu, headCategory){
+function buildListFromCategories(categories, isMenu, headCategory, isAjax){
 	var mainDiv = jQuery(".dynamicList");
 	if (isMenu){
 		mainDiv.attr("class", "navbox");
@@ -37,6 +37,7 @@ function buildListFromCategories(categories, isMenu, headCategory){
 	}
 
 	var ulTag = mainDiv.children('ul');
+	var allCategories = new Array();
 	
 	for (var index = 0; index < categories.length; index++){
 		var listItemTitle = categories[index].title.split(":")[1];
@@ -52,20 +53,27 @@ function buildListFromCategories(categories, isMenu, headCategory){
 			}
 		}
 		allCategories[index] = itemLinkVal;
-		ulTag.append('<li><a href=\"learning.html?Subject=' + itemLinkVal + '\">' + listItemTitle + '</li>');
+		if (isAjax){
+			ulTag.append('<li><a href=\"#' + itemLinkVal + '\" onclick="">' + listItemTitle + '</li>')
+		}
+		else{
+			ulTag.append('<li><a href=\"learning.html?Subject=' + itemLinkVal + '\">' + listItemTitle + '</li>')
+		}
+		
 	}
-
+	
 	if ((isMenu) && (window.location.href.indexOf("exercise.html")==-1)){
 		ulTag.append('<li><a href=\"exercise.html?Subject=' + headCategory + '\">exercise ' + headCategory + '</li>');
 		ulTag.prepend('<li><a href=\"index.html\">Home</li>');
 	}
+
 	return allCategories;
 }
 
-function loadWikiMenues(category, isMenu){
+function loadWikiMenues(category, isMenu, isAjax){
 	var res = getWikiCategorySubcategories(category);
 	var Categories = res.categorymembers;
-	buildListFromCategories(Categories,isMenu,category);
+	buildListFromCategories(Categories,isMenu, category, isAjax);
 }
 
 function loadWikiPagesMenu(category){
@@ -86,7 +94,6 @@ function GetURLParameter(sParam) {
         }
     }
 }
-
 function buildMenuBySubject(){
 	var urlParamSubject = GetURLParameter('Subject');
 	loadWikiPagesMenu(urlParamSubject);

@@ -43,7 +43,7 @@ jQuery(function(){
 
 	isFirstLoad = false;
 
-	allCategories = buildMenuBySubject();
+	allCategories = buildMenuBySubject(true);
 	setCurrPage();
 
 });
@@ -100,32 +100,7 @@ function buttonClick(event){
 	showPage(allCategories[pageIndex]);
 }
 
-function buildMenuBySubject(){
-	var urlParamSubject = GetURLParameter('Subject');
-	if (localStorage.getItem('Subject') == undefined){
-		localStorage.setItem('Subject', urlParamSubject);
-	}
 
-	return loadWikiPagesMenu(urlParamSubject);
-}
-
-function showPage(pageName) {
-		var urlName = pageName.replace(' ', '_');
-		changeUrl(urlName);
-
-		jQuery.ajax({
-			url : 'http://localhost/socialWiki/index.php/' + urlName,
-			xhrFields: {withCredentials: true},
-			dataType : 'html',
-			success : function( data, textStatus, jqXHR ) {
-				var jqData = jQuery('<div />').html(data);
-				contentDiv.html(jqData.find('#content').html()).append(jqData.find('style'));
-			},
-			error : function( jqXHR, textStatus, errorThrown ) {
-				alert('error');
-			}
-		});
-	}
 
 function changeUrl(pageName) {
 	if (shoulChangeUrl) {

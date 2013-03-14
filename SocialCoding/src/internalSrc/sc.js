@@ -54,7 +54,7 @@ function buildListFromCategories(categories, isMenu, headCategory, isAjax){
 		}
 		allCategories[index] = itemLinkVal;
 		if (isAjax){
-			ulTag.append('<li><a href=\"#' + itemLinkVal + '\" onclick="">' + listItemTitle + '</li>')
+			ulTag.append('<li><a href="#" onclick="showPage(' + itemLinkVal + ')">' + listItemTitle + '</li>')
 		}
 		else{
 			ulTag.append('<li><a href=\"learning.html?Subject=' + itemLinkVal + '\">' + listItemTitle + '</li>')
@@ -70,16 +70,16 @@ function buildListFromCategories(categories, isMenu, headCategory, isAjax){
 	return allCategories;
 }
 
-function loadWikiMenues(category, isMenu, isAjax){
+function loadWikiMenues(category, isMenu){
 	var res = getWikiCategorySubcategories(category);
 	var Categories = res.categorymembers;
-	buildListFromCategories(Categories,isMenu, category, isAjax);
+	buildListFromCategories(Categories,isMenu, category, false);
 }
 
-function loadWikiPagesMenu(category){
+function loadWikiPagesMenu(category, isAjax){
 	var res = getWikiCategoryPages(category);
 	var Categories = res.categorymembers;
-	return buildListFromCategories(Categories, true);
+	return buildListFromCategories(Categories, true, category, isAjax);
 }
 
 function GetURLParameter(sParam) {
@@ -94,7 +94,25 @@ function GetURLParameter(sParam) {
         }
     }
 }
-function buildMenuBySubject(){
+function buildMenuBySubject(isAjax){
 	var urlParamSubject = GetURLParameter('Subject');
-	loadWikiPagesMenu(urlParamSubject);
+	return loadWikiPagesMenu(urlParamSubject, isAjax);
 }
+
+function showPage(pageName) {
+		var urlName = pageName.replace(' ', '_');
+		changeUrl(urlName);
+
+		jQuery.ajax({
+			url : 'http://localhost/socialWiki/index.php/' + urlName,
+			xhrFields: {withCredentials: true},
+			dataType : 'html',
+			success : function( data, textStatus, jqXHR ) {
+				var jqData = jQuery('<div />').html(data);
+				contentDiv.html(jqData.find('#content').html()).append(jqData.find('style'));
+			},
+			error : function( jqXHR, textStatus, errorThrown ) {
+				alert('error');
+			}
+		});
+	}

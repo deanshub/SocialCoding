@@ -56,6 +56,7 @@ function buildListFromCategories(categories, isMenu, headCategory){
 	
 	if ((isMenu) && (window.location.href.indexOf("exercise.html")==-1)){
 		ulTag.append('<li><a href=\"exercise.html?Subject=' + headCategory + '\">exercise ' + headCategory + '</li>');
+		ulTag.prepend('<li><a href=\"index.html\">Home</li>');
 	}
 }
 

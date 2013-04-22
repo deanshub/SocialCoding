@@ -22,9 +22,9 @@ function showProfilePic(toShow){
 		var userDat = getUserDetails(localStorage["access_token"]);
 
 		jQuery("#profileDats").attr("href", userDat['html_url']);
-		//jQuery("#profileDats").text(userDat['name']);
+		jQuery("#profileDats").text(userDat['name']);
 		jQuery("#profileDats").prepend('<img id="profilePic" src="' + userDat['avatar_url'] + '" />')
-		jQuery("#profilePic").attr("src", userDat['avatar_url']);
+		//jQuery("#profilePic").attr("src", userDat['avatar_url']);
 		jQuery(".ProfilePicDiv").css("visibility", "visible");
 	} else {
 		jQuery(".ProfilePicDiv").css("visibility", "hidden");
@@ -80,6 +80,18 @@ function createGistNoParams() {
 	createGist(localStorage['access_token'], 'descdesc', false, files);
 }
 
+function createGistFromExercise() {
+	lang = GetURLParameter('Subject');
+	filename = jQuery('#issue').text() + "_Sc-Solution." + lang;
+	content = document.getElementById('userCode').value
+
+	description = jQuery('#issueDesc').text();
+	var newfiles = {};
+	files = { "Sc-Solution": { 'content':content } };
+	
+	createGist(localStorage['access_token'], description, true, files);
+}
+
 function createGist(access_token, description, public, files){
 	var jsonData =  {description:description, public:public};
 	jsonData["files"] = files;
@@ -92,10 +104,29 @@ function createGist(access_token, description, public, files){
 	    contentType: 'application/json; charset=utf-8',
 		datatype: 'json',
 		success: function (result) {
-			alert("I wrote a gist!");
+			alert('Gist created!\nYour solution was uploaded to GitHub to share it with everyone :) (include the project manager of this exercise!)');
+			// Comment on issue with a link to the gist. I just need the current issue number to set in issueId.
+			// commentOnIssue(access_token, issueId, result['html_url']);
 		},
 		error: function (result) {
-			alert("failed :(");
+			alert("Failed to upload your solution to gist.\nSorry about that :(");
+		}
+    });
+}
+
+function commentOnIssue(access_token, issueId, commentBody) {
+	content = { body: commentBody };
+	urlIssue = "";
+
+	jQuery.ajax({
+    	url: urlIssue,
+    	type: "POST",
+		data: JSON.stringify(content),
+	    contentType: 'application/json; charset=utf-8',
+		datatype: 'json',
+		success: function (result) {
+		},
+		error: function (result) {
 		}
     });
 }

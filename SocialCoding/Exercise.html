@@ -7,11 +7,11 @@
 		<script type="text/javascript" src="src/garlic/garlic.min.js"></script>
 		<script type="text/javascript" src="src/internalSrc/sc.js"></script>
 		<script type="text/javascript" src="src/internalSrc/exercise.js"></script>
+		<script type="text/javascript" src="src/internalSrc/git.js"></script>
 	</head>
 	<body class="CenteredBody">
 		<div class="dynamicList">
 		</div>
-
 		<div class="ExerciseUpperPart">
 			<a href="index.html"><img class="smallLogo" href="index.html" src="src/internalSrc/sc.png"></a>
 			<header>This is your mission!</header>
@@ -26,9 +26,8 @@
 				<div class="garlic-auto-save" id="editor"/>
 			</div>
 			<textarea id="userCode"></textarea>
-			<a class="coolButton" >done!</a>
+			<a class="coolButton" onclick="createGistFromExercise();">done!</a>
 		</form>
 		<script src="src/ace/ace.js" type="text/javascript" charset="windows-1255"></script>
-		
 	</body>
 </html>

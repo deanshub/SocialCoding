@@ -1,0 +1,35 @@
+.ProfilePicDiv {
+	border:2px solid;
+	border-radius:10px;
+	border-color: pink;
+	position: absolute;
+	/*padding: 5px;*/
+	right: 10px;
+	width: 170px;
+	overflow: auto;
+	visibility: hidden;
+}
+
+#profileDats {
+	float: left;
+	text-decoration: none;
+	color: black;
+	vertical-align: middle;
+	/*margin: 1%;*/
+	padding: 2px;
+	/*border-color: red;*/
+	/*border: 2px solid;*/
+	width: auto;
+	height: auto;
+}
+
+#profilePic {
+	width: 30px;
+	height: 30px;
+	margin: 1px;
+}
+
+#loginGithub {
+	position: absolute;
+	right: 10px;
+}

@@ -59,10 +59,10 @@ function getUserDetails(access_token){
 	var loggedUser = [];
 
 	jQuery.ajax( {
+		async:false,
 		cache:false,
 		dataType:'json',
-		xhrFields: {withCredentials: true}, 
-		async:false,
+		//xhrFields: {withCredentials: true}, 
 		url : 'https://api.github.com/user?access_token=' + access_token,
 		success:function(userDat){
 			loggedUser = userDat;

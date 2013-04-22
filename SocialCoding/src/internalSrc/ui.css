@@ -119,6 +119,8 @@ div#pageNavigation{
 
 .prevButton{
   display: none;
+  text-align: right;
+  padding-right: 15px;
 }
 
 /***************** navigation box start ******************/

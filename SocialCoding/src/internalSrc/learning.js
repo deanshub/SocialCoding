@@ -58,7 +58,7 @@ function loadWikiPageFromParam() {
 
 function setCurrPage(){
 	var urlParamSubject = GetURLParameter('Subject');
-	var pageIndex;
+	var pageIndex = 0;
 	for (var index = 0; index < allCategories.length; index++){
 		if (allCategories[index] == urlParamSubject){
 			pageIndex = index;

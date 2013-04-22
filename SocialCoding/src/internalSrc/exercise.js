@@ -24,7 +24,7 @@ function loadIssues(){
 				jQuery.ajax( {
 					cache:false,
 					dataType:'json',
-					xhrFields: {withCredentials: true}, 
+					//xhrFields: {withCredentials: true}, 
 					async:false,
 					url : 'https://api.github.com/repos/' + projId + '/issues',
 					success:function(issues){
